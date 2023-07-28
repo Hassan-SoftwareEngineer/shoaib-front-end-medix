@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@font-face {
+  font-family: GontserratBold;
+  src: url(./assets/styles/fonts/Gontserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: GontserratRegular;
+  src: url(./assets/styles/fonts/Gontserrat-Regular.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: "GontserratRegular";
+  padding: 0 4.3rem;
+  
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 2rem;
+  }
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    font-size: 16px !important;
+    margin-left: 14px !important;
+    margin-right: 14px !important;
+  }
+}
+
+a {
+  color: #b6b6b6;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 0.5s color ease;
+  font-family: "GontserratRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: #165643;
+}
+
+.active {
+  color: #165643;
+}
+a.before:before,
+a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.drawer-nav {
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 14px;
+}
+
+a.before:before {
+  top: -0.25em;
+}
+
+a.after:after {
+  bottom: -0.25em;
+}
+
+a.before:before,
+a.after:after {
+  height: 5px;
+  height: 0.35rem;
+  width: 0;
+  background: #165643;
+}
+
+a.first:after {
+  left: 0;
+}
+
+a.before:hover:before,
+a.after:hover:after {
+  width: 100%;
+}
+
+
+.hero-sec{
+  background: linear-gradient(360deg, #165643 -6.94%, rgba(22, 86, 67, 0) 105.09%),url("./assets/images/hero-section-bg-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+  box-shadow: none!important
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+  border-radius: 25px!important
+}
+// @media (max-width: 300px) {
+//   html { font-size: 70%; }
+// }
+
+// @media (min-width: 500px) {
+//   html { font-size: 80%; }
+// }
+
+// @media (min-width: 700px) {
+//   html { font-size: 120%; }
+// }
+
+// @media (min-width: 1200px) {
+//   html { font-size: 200%; }
+// }
+
+@import "./assets/styles/global.scss";
